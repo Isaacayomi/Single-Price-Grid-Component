@@ -20,8 +20,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub
+- Live Site URL: https://single-price-grid-component-indol-seven.vercel.app/
 ## My process
 
 ### Built with
