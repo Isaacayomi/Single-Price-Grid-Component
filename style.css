@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;700;900&display=swap');
+
+:root{
+    --top-container-header:hsl(179, 62%, 43%);
+    --top-container-subheading:hsl(71, 73%, 54%);
+    --container-bg:hsl(204, 43%, 93%);
+    --paragraph-color:hsl(218, 22%, 67%);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+body{
+    font-size:16px;
+    background-color:var(--container-bg);
+}
+
+header{
+    font-family: 'Outfit', sans-serif;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    margin:1.5rem;
+    display:grid;
+    place-content:center;
+    min-height:100vh;
+}
+
+.top-container{
+    background-color:white;
+    border-radius:7px 7px 0 0;
+    padding:1rem 1.8rem;
+}
+
+.top-container header{
+    color: var(--top-container-header);
+    margin:1rem 0;
+}
+
+.top-container .sub-heading{
+    font-weight:500;
+    color: var(--top-container-subheading);
+    margin:1.6rem 0 1.2rem 0;
+}
+
+.top-container .content{
+    color:rgb(126, 126, 126);
+    font-weight:400;
+    line-height: 1.7rem;
+    margin-bottom:1.3rem;
+}
+
+.left-container{
+    background-color:var(--top-container-header);
+    padding:1rem 1.8rem;
+    color:white;
+}
+
+.left-container header{
+    font-size:1.2rem;
+    margin:1.2rem 0 0.8rem 0;
+}
+
+.price-section{
+    display:flex;
+    align-items:center;
+    gap:0.7rem;
+    margin-bottom:0.5rem;
+}
+
+.price{
+    font-size:2.2rem;
+}
+
+.price-duration{
+    color: var(--container-bg);
+}
+
+.access-price{
+    margin-bottom:2rem;
+}
+
+button{
+    display:block;
+    margin:auto;
+    width:100%;
+    padding:1rem 2rem;
+    border-radius:10px;
+    border:none;
+    color:white;
+    font-size:1rem;
+    background-color:var(--top-container-subheading);
+    box-shadow:0 0.5rem 0.5rem -0.2rem hsla(0, 3%, 34%, 0.5);
+    margin-bottom:1rem;
+}
+
+.right-container{
+    border-radius:0 0 7px 7px;
+    padding:1rem 1.8rem 1.8rem 1.8rem;
+    background-color:hsla(179, 93%, 43%, 0.3);
+}
+
+.right-container header{
+    color:white;
+    font-size:1.3rem;
+    margin:1.2rem 0 0.8rem 0;
+}
+
+.right-container .content p{
+    display:block;
+    color:hsl(0, 43%, 99%);
+    font-weight:light;
+    font-size:1rem;
+    line-height:1.5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color:var(--top-container-header);
+ }
+
+.attribution a { 
+    color: var(--top-container-subheading); 
+}
+
+@media screen and (min-width:700px){
+    .container{
+        max-width:800px;
+        margin:auto;
+        display:grid;
+        grid-template-areas: 
+        'a a '
+        'b c';
+    }
+
+    .top-container{
+        grid-area:a;
+    }
+
+    .left-container{
+        grid-area:b;
+    }
+
+    .right-container{
+        grid-area:c;
+    }
+
+    .attribution{
+        margin-top:-5rem;
+    }
+}
